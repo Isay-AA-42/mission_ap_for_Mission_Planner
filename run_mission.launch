@@ -1,0 +1,5 @@
+<launch>
+    <rosparam command="load" file="$(find lab_isay)/config/waypoints.yaml" />
+
+    <node name="mission" pkg="lab_isay" type="mission_ap" output="screen" />
+</launch>
